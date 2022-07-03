@@ -10,7 +10,7 @@
   font-family: "Poppins";
   src: url(/assets/fonts/Poppins-Medium.ttf);
 }
-.header-text {
+.form-infos, .header-text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,4 +257,112 @@ nav li {
   display: grid;
   height: 100%;
   align-items: center;
+}
+
+.section3 {
+  padding: 100px 15px 65px;
+  color: #eee;
+}
+
+.form-content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background: #eee;
+  min-width: 1050px;
+  margin: 0 auto;
+}
+
+.hours {
+  padding: 24px;
+  background: #000;
+}
+
+.hours-content {
+  border: 1px dashed #eee;
+  padding: 20px 0;
+}
+
+.hours-content h3 {
+  font-family: Allura, cursive;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: rgb(166, 114, 69);
+}
+
+.hours-content h4 {
+  font-family: Poppins, serif;
+  margin-top: -16px;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+
+.hours-content img {
+  margin-top: 25px;
+}
+
+.hours-content h5 {
+  color: rgb(166, 114, 69);
+  font-family: Poppins, serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.1rem;
+  margin: 38px 0 12px;
+}
+
+.hours-content p {
+  font-size: 0.85rem;
+}
+
+.form-infos {
+  padding: 30px 0;
+}
+
+.form-infos h2 {
+  font-family: Allura, cursive;
+  font-size: 2.5em;
+  font-weight: 100;
+  color: rgb(166, 114, 69);
+}
+
+.form-infos h3 {
+  font-family: Poppins, serif;
+  color: #21201e;
+  font-size: 1.8rem;
+  margin-top: -18px;
+}
+
+.form-infos img {
+  height: 25px;
+  margin: 25px;
+}
+
+.form-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 30px;
+}
+
+.form-inputs > * {
+  padding: 10px 0;
+  margin: 10px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+form button {
+  border: none;
+  border-radius: 50px;
+  background: #21201e;
+  color: #eee;
+  padding: 16px 34px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+form button:hover {
+  transform: translateX(3px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.43);
 }/*# sourceMappingURL=index.css.map */
