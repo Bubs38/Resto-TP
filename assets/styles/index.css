@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "Allura";
+  src: url(/assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/fonts/Poppins-Medium.ttf);
+}
+.header-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  font-family: Roboto, serif;
+  background: #21201e;
+}
+
+header {
+  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+  padding: 0 50px;
+  color: #eee;
+}
+
+nav {
+  height: 12vh;
+  display: grid;
+  grid-template-columns: 10% 82% 8%;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: Allura, cursive;
+  font-weight: 100;
+  font-size: 2rem;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0 30px;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.8rem;
+}
+
+.nav-icons i {
+  transition: 0.2s;
+  cursor: pointer;
+}
+.nav-icons i:hover {
+  transform: scale(1.3);
+}
+
+.header-text {
+  height: 88vh;
+}
+
+.header-text-content {
+  margin-top: -200px;
+}
+
+.header-text-content h2 {
+  font-family: Allura, cursive;
+  color: rgb(166, 114, 69);
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.header-text-content h1 {
+  font-size: 3.2rem;
+  letter-spacing: 10px;
+  font-weight: 700;
+  margin-top: -28px;
+  font-family: Poppins, serif;
+}
+
+.header-text-content img {
+  height: 27px;
+  margin: 32px 0;
+}
+
+.header-text-content h6 {
+  font-size: 0.75rem;
+  letter-spacing: 6px;
+  font-weight: 200;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: #eee;
+}
+
+.intro-text {
+  margin: 15px;
+  padding: 30px 15px;
+  border: 1px dashed rgb(166, 114, 69);
+}
+
+.intro-text h2 {
+  color: rgb(166, 114, 69);
+  font-family: Allura, cursive;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.intro-text h3 {
+  margin-top: -12px;
+  font-family: Poppins, serif;
+}
+
+.intro-text img:first-of-type {
+  margin: 26px;
+}
+
+.intro-text img:nth-of-type(2) {
+  height: 70px;
+  border-radius: 150px;
+  margin: 15px 0 8px;
+}
+
+.intro-text h4 {
+  font-family: Poppins, serif;
+  font-weight: 100;
+}
+
+.intro-text h5 {
+  color: rgb(182, 182, 182);
+  font-size: 0.7rem;
+}
+
+.intro-pic {
+  background: url(/assets/img/store-01.jpg) center/cover;
+}
+
+.section2 {
+  color: #eee;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.section2::after {
+  content: "";
+  position: absolute;
+  height: 620px;
+  width: 100%;
+  background: url(/assets/img/bg-menu-01.jpg);
+  left: 50%;
+  bottom: -330px;
+  transform: translate(-50%, -50%);
+}
+
+.section2 h2 {
+  color: rgb(166, 114, 69);
+  font-size: 2rem;
+  font-family: Allura, cursive;
+  font-weight: 500;
+  padding: 60px 0 30px;
+}
+
+.section2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: 30px auto;
+  min-width: 500px;
+}
+
+.section2 li {
+  border-bottom: 1px solid rgb(182, 182, 182);
+  padding-bottom: 8px;
+}
+
+.meals {
+  background: #eee;
+  color: #21201e;
+  width: 85%;
+  margin: 0 auto;
+  max-width: 800px;
+  border-top: 4px solid rgb(166, 114, 69);
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  z-index: 100;
+  position: relative;
+}
+
+.meal {
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  border-bottom: 1px dashed rgb(182, 182, 182);
+  padding: 30px 0;
+  margin: 0 20px;
+}
+
+.meal img {
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  align-self: center;
+}
+
+.meal-text {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 10px;
+  height: 100%;
+}
+
+.meal-text h3 {
+  text-transform: uppercase;
+  color: #21201e;
+  font-size: 0.8rem;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.meal > p {
+  color: rgb(166, 114, 69);
+  font-weight: 600;
+  display: grid;
+  height: 100%;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */
